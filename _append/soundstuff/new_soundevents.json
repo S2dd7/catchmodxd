@@ -1,0 +1,270 @@
+{
+    "enteranvil2": {
+        "playsounds": [
+            {
+                "channel": 1,
+                "delay": 0.01,
+                "file": "music/wibi/banger",
+                "loop": true,
+                "tag": "shoptheme",
+                "volume": {
+                    "fade": 2,
+                    "max": 1,
+                    "min": 0,
+                    "random": false,
+                    "value": 1
+                }
+            }
+        ]
+    },
+    "entershop2": {
+        "playsounds": [
+            {
+                "channel": 1,
+                "delay": 0.01,
+                "file": "music/wibi/three_musketeers",
+                "loop": true,
+                "tag": "shoptheme",
+                "volume": {
+                    "fade": 1,
+                    "max": 1,
+                    "min": 0,
+                    "random": false,
+                    "value": 1
+                }
+            }
+        ]
+    },
+    "atmos_darkforest": {
+        "playsounds": [
+            {
+                "channel": 1,
+                "delay": 0,
+                "effect": "",
+                "file": "music/wibi/quietmod",
+                "filter": "",
+                "loop": true,
+                "panning": {
+                    "fade": 0,
+                    "max": 0,
+                    "min": 0,
+                    "random": false,
+                    "value": 0
+                },
+                "pitch": {
+                    "fade": 0,
+                    "max": 1,
+                    "min": 0,
+                    "random": false,
+                    "value": 1
+                },
+                "position": 0,
+                "syncbpm": 0,
+                "tag": "atmos",
+                "volume": {
+                    "fade": 0,
+                    "max": 1,
+                    "min": 0,
+                    "random": false,
+                    "value": 0.4
+                }
+            },
+            {
+                "channel": 1,
+                "file": "music/chest/chest_darkforest",
+                "loop": true,
+                "tag": "chesttheme",
+                "volume": {
+                    "fade": 0,
+                    "max": 1,
+                    "min": 0,
+                    "random": false,
+                    "value": 0
+                }
+            }
+        ],
+        "stopsounds": [
+            {
+                "file": "music/title/title"
+            }
+        ]
+    },
+    "atmos_dungeon": {
+        "playsounds": [
+            {
+                "channel": 1,
+                "delay": 0,
+                "effect": "",
+                "file": "music/wibi/funmod",
+                "filter": "",
+                "loop": true,
+                "panning": {
+                    "fade": 0,
+                    "max": 0,
+                    "min": 0,
+                    "random": false,
+                    "value": 0
+                },
+                "pitch": {
+                    "fade": 0,
+                    "max": 1,
+                    "min": 0,
+                    "random": false,
+                    "value": 1
+                },
+                "position": 0,
+                "syncbpm": 0,
+                "tag": "atmos",
+                "volume": {
+                    "fade": 0,
+                    "max": 1,
+                    "min": 0,
+                    "random": false,
+                    "value": 0.4
+                }
+            },
+            {
+                "channel": 1,
+                "file": "music/chest/chest_dungeon",
+                "loop": true,
+                "tag": "chesttheme",
+                "volume": {
+                    "fade": 0,
+                    "max": 1,
+                    "min": 0,
+                    "random": false,
+                    "value": 0
+                }
+            }
+        ],
+        "stopsounds": [
+            {
+                "file": "music/title/title"
+            }
+        ]
+    },
+	
+    "music_combat1": {
+        "playsounds": [
+            {
+                "channel": 1,
+                "delay": 0,
+                "effect": "",
+                "file": "music/wibi/beetle",
+                "filter": "",
+                "loop": true,
+                "panning": {
+                    "fade": 0,
+                    "max": 0,
+                    "min": 0,
+                    "random": false,
+                    "value": 0
+                },
+                "pitch": {
+                    "fade": 0,
+                    "max": 1,
+                    "min": 0,
+                    "random": false,
+                    "value": 1
+                },
+                "position": 0,
+                "syncbpm": 0,
+                "tag": "combatmusic",
+                "volume": {
+                    "fade": 2,
+                    "max": 1,
+                    "min": 0,
+                    "random": false,
+                    "value": 0
+                }
+            }
+        ],
+        "stopsounds": [
+            {
+                "file": "music/title/title"
+            }
+        ]
+    },
+    "music_combat2": {
+        "playsounds": [
+            {
+                "channel": 1,
+                "delay": 0,
+                "effect": "",
+                "file": "music/wibi/help",
+                "filter": "",
+                "loop": true,
+                "panning": {
+                    "fade": 0,
+                    "max": 0,
+                    "min": 0,
+                    "random": false,
+                    "value": 0
+                },
+                "pitch": {
+                    "fade": 0,
+                    "max": 1,
+                    "min": 0,
+                    "random": false,
+                    "value": 1
+                },
+                "position": 0,
+                "syncbpm": 0,
+                "tag": "combatmusic",
+                "volume": {
+                    "fade": 2,
+                    "max": 1,
+                    "min": 0,
+                    "random": false,
+                    "value": 0
+                }
+            }
+        ],
+        "stopsounds": [
+            {
+                "file": "music/title/title"
+            }
+        ]
+    },
+    "music_combat3": {
+        "playsounds": [
+            {
+                "channel": 1,
+                "delay": 0,
+                "effect": "",
+                "file": "music/wibi/twister",
+                "filter": "",
+                "loop": true,
+                "panning": {
+                    "fade": 0,
+                    "max": 0,
+                    "min": 0,
+                    "random": false,
+                    "value": 0
+                },
+                "pitch": {
+                    "fade": 0,
+                    "max": 1,
+                    "min": 0,
+                    "random": false,
+                    "value": 1
+                },
+                "position": 0,
+                "syncbpm": 0,
+                "tag": "combatmusic",
+                "volume": {
+                    "fade": 2,
+                    "max": 1,
+                    "min": 0,
+                    "random": false,
+                    "value": 0
+                }
+            }
+        ],
+        "stopsounds": [
+            {
+                "file": "music/title/title"
+            }
+        ]
+    }
+}
