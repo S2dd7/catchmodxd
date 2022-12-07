@@ -8,22 +8,44 @@ var inflict = args[3];
 
 var randstatus = "";
 
+//Only include statuses that have a limit
+var pool_all_player = ["fire", "ice", "weaken", "shock", "blind", "vanish"];
+//Include lock if you're player :smore:
+var pool_all_target = ["lock", "fire", "ice", "weaken", "shock", "vanish"];
+var pool_player = ["curse", "lock", "fire", "ice", "weaken", "shock", "poison", "blind", "fade", "nudgenextturn"];
+var pool_target = ["curse", "lock", "fire", "ice", "weaken", "shock", "poison", "fade", "nudgenextturn"];
+
+var pool = null;
+
 if(_amount == ALL){
-  //Only include statuses that have a limit
+  
   if(_target.isplayer){
-    randstatus = rand(["fire", "ice", "weaken", "shock", "blind"]);
+    pool = pool_all_player;
   } else {
-    //Include lock if you're player :smore:
-    randstatus = rand(["lock", "fire", "ice", "weaken", "shock"]);
+    pool = pool_all_target;
   }
 } else {
   if(_target.isplayer){
-    randstatus = rand(["curse", "lock", "fire", "ice", "weaken", "shock", "poison"]);
+    pool = pool_player;
   } else {
-    randstatus = rand(["curse", "lock", "fire", "ice", "weaken", "shock", "poison"]);
+    pool = pool_target;
+  }
+  
+  
+  if(amount <= 6) {
+    pool.push("counter");
   }
 }
-inflict(randstatus, _amount); 
+
+
+randstatus = rand(pool);
+if(randstatus == "vanish") { amount = 1; }
+
+if(randstatus != "counter") {
+  inflict(randstatus, _amount);
+} else {
+  inflict(randstatus + "_" + amount);
+}
 if(adddelay){
   sfx("_" + randstatus.toLowerCase(), "", 0.2);
 }else{

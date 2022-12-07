@@ -1,4 +1,4 @@
-var warriorshops = ["Broadsword", "Iron Shield", "Dagger", "Buckler", "Target Shield", "Nightstick", "Snake Eye Charm", "Midnight Charm", "Healing Crystal", "Claw", "Snowball", "Boomerang", "Tazer", "First Aid Kit", "Message", "Spam Email"];
+var warriorshops = ["Broadsword", "Iron Shield", "Dagger", "Buckler", "Target Shield", "Nightstick", "Snake Eye Charm", "Midnight Charm", "Healing Crystal", "Claw", "Snowball", "Boomerang", "Tazer", "First Aid Kit", "Spam Email", "Return to Sender", "Dial a Song"];
 var strangeshop = ["Spatula", "Last Online: 3 Years Ago", "Shriek", "Mailbox", "Juggling Ball", "Toxic Ooze"];
 var awesomelist = ["Whip", "Toxic Ooze", "Claw", "Staff", "Mailbox", "Shovel", "Battle Axe"];
 var floor2gooditem = ["Bump"];
@@ -19,7 +19,7 @@ gooditems = [awesomelist.pop()];
 otherstuff = [];
 goodotherstuff = [];
 
-addfloor("tiny")
+var floor1 = addfloor("tiny")
   .additems(items, gooditems)
   .addotherstuff(otherstuff, goodotherstuff)
   .generate();
@@ -30,7 +30,7 @@ gooditems = [floor2gooditem.pop()];
 otherstuff = [health()];
 goodotherstuff = [shop([warriorshops.pop(), warriorshops.pop(), warriorshops.pop()])];
 
-addfloor("small")
+var floor2 = addfloor("small")
   .additems(items, gooditems)
   .addotherstuff(otherstuff, goodotherstuff)
   .generate();
@@ -47,7 +47,7 @@ goodotherstuff = [
   upgrade()
 ];
 
-addfloor("normal")
+var floor3 = addfloor("normal")
   .additems(items, gooditems)
   .addotherstuff(otherstuff, goodotherstuff)
   .generate();
@@ -61,7 +61,7 @@ goodotherstuff = [
   trade(["any"], [awesomelist.pop()])
 ];
 
-addfloor("normal")
+var floor4 = addfloor("normal")
   .additems(items, gooditems)
   .addotherstuff(otherstuff, goodotherstuff)
   .generate();
@@ -77,7 +77,7 @@ goodotherstuff = [
   shop(["upgrade", strangeshop.pop(), "health"], [4, 4, 4])
 ];
 
-addfloor("big")
+var floor5 = addfloor("big")
   .additems(items, gooditems)
   .addotherstuff(otherstuff, goodotherstuff)
   .generate();
@@ -99,3 +99,5 @@ lastfloor
   .setlocation('BOSS')
   .addotherstuff(otherstuff, goodotherstuff)
   .generate();
+
+runscript("catchmodxd/floorcorrections",[getplayername(), floor1, floor2, floor3, floor4, floor5, lastfloor, getfinalboss()]);

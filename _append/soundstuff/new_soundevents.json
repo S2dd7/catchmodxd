@@ -144,7 +144,7 @@
         ]
     },
 	
-    "music_combat1": {
+    "music_cmx_combat1": {
         "playsounds": [
             {
                 "channel": 1,
@@ -185,7 +185,7 @@
             }
         ]
     },
-    "music_combat2": {
+    "music_cmx_combat2": {
         "playsounds": [
             {
                 "channel": 1,
@@ -226,7 +226,7 @@
             }
         ]
     },
-    "music_combat3": {
+    "music_cmx_combat3": {
         "playsounds": [
             {
                 "channel": 1,
@@ -266,5 +266,21 @@
                 "file": "music/title/title"
             }
         ]
-    }
+    },
+    "_nudgenextturn": {
+        "playsounds": [{
+            "file": "sfx/dicething",
+            "pitch": {
+                "fade": 0,
+                "max": 0.75,
+                "min": 0.65,
+                "random": true
+            }
+        }]
+    },
+    "_fade": {
+        "playsounds": [{
+            "folder": "sfx/status/blind",
+        }]
+    },
 }
