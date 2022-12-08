@@ -4,3 +4,6 @@ ticket,ticket,0xfc5b69,IMAGE
 mail,mail,0xffaec8,IMAGE
 nudge,nudge,0xfd5e6c,IMAGE
 returntosender,returntosender,0xBDA0F4,IMAGE
+bullet,bullet,0xfff830,IMAGE
+bulletused,bulletused,0xdddddd,IMAGE
+funnysymbol,1,0xffffff,SIZECHANGE
