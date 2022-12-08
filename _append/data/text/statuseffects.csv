@@ -6,3 +6,4 @@ fade,Fade,vanish,Duplicate dice are immediately destroyed.|Disappears when trigg
 nudgenextturn,Nudge,nudge,When your turn starts[;]|decrease the value of <value> dice.,YES,NO,NO,NO,YES,,,,runscript(~tennis/bumpnextturn~|[self|status.value * -1]); status.removenow();,,,,,,,
 returntosender,Return to Sender,returntosender,When the enemy uses a card that casts toward you[;]|inflict [mail]1 mail on them.,NO,NO,YES,NO,NO,,,,,,,,,,,
 returntosender_real,Return to Sender (Real),cog,shouldn't appear,NO,NO,NO,YES,NO,,,,,if(target.hasstatus(~returntosender~) && e.castdirection == 1) { inflictself(~mail~); },,,,,,
+thiefspaceleft,Space_Left,cog,you can have [cog]<value> more spaces left|of guns not loaded at a time,YES,NO,NO,NO,NO,,,,,,,,,,,

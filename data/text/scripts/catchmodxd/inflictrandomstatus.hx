@@ -32,14 +32,14 @@ if(_amount == ALL){
   }
   
   
-  if(amount <= 6) {
+  if(_amount <= 6) {
     pool.push("counter");
   }
 }
 
 
 randstatus = rand(pool);
-if(randstatus == "vanish") { amount = 1; }
+if(randstatus == "vanish") { _amount = 1; }
 
 if(randstatus != "counter") {
   inflict(randstatus, _amount);
