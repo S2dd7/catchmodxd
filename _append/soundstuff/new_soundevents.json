@@ -283,4 +283,9 @@
             "folder": "sfx/status/blind",
         }]
     },
+    "_counter": {
+        "playsounds": [{
+            "folder": "sfx/status/lock",
+        }]
+    }
 }
