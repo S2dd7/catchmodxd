@@ -143,7 +143,6 @@
             }
         ]
     },
-	
     "music_cmx_combat1": {
         "playsounds": [
             {
@@ -280,12 +279,12 @@
     },
     "_fade": {
         "playsounds": [{
-            "folder": "sfx/status/blind",
+            "folder": "sfx/status/blind"
         }]
     },
     "_counter": {
         "playsounds": [{
-            "folder": "sfx/status/lock",
+            "folder": "sfx/status/lock"
         }]
     }
 }
