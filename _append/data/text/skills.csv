@@ -1,3 +1,4 @@
 Name,Description,Script
 mail,Before start turn[;] inflict|[mail]X of a random status,
 Envelope,Inflict [mail]1 mail,inflict(~mail~|1); sfx(~_blind~);
+Find Two,Fade [vanish]1 dice,inflict(~fade~|1); sfx(~_vanish~); /*yep it's just delude. yep it's worded fade 1 dice.*/
